@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>paralax</title>
+<style>
+#home {
+	background: url(bnw.jpg) 50% 0 repeat fixed;
+	min-height: 1000px;
+	color: white;
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+#home article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	width: 100%;
+}
+#about {
+	background: url(blur.jpg) 50% 0 repeat fixed;
+	min-height: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#about article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	width: 100%;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body>
+<section id="home" data-type="background" data-speed="10">
+  <article>
+    <h1>I am absolute positioned</h1>
+  </article>
+</section>
+<section id="about" data-type="background" data-speed="10">
+  <article>
+    <h2>Simple Parallax Scroll</h2>
+  </article>
+</section>
+<script src="jquery.min.js"></script>
+</body>
+</html>
